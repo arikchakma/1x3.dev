@@ -13,7 +13,10 @@ const Home: NextPage = () => {
           content="A tiny development studio focusing on beautifully crafted visual design for web applications."
           name="description"
         />
-        <meta name="keywords" content="1X3, OneXThree Studio, Development Studio" />
+        <meta
+          name="keywords"
+          content="1X3, OneXThree Studio, Development Studio"
+        />
         <meta property="og:url" content="https://1x3.studio" />
         <link rel="canonical" href="https://1x3.studio" />
         <meta property="og:type" content="website" />
@@ -124,9 +127,15 @@ const Home: NextPage = () => {
         </section>
 
         <footer>
-          <button className="rounded-md bg-black px-3 py-2 text-background transition-all hover:bg-indigo-600 hover:drop-shadow-xl">
-            Let's talk
-          </button>
+          <a
+            href="https://twitter.com/ImArikChakma"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <button className="rounded-md bg-black px-3 py-2 text-background transition-all hover:bg-indigo-600 hover:drop-shadow-xl">
+              Let's talk
+            </button>
+          </a>
         </footer>
       </main>
     </div>
