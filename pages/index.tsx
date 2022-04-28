@@ -22,7 +22,7 @@ const Home: NextPage = () => {
           property="og:description"
           content="A tiny development studio focusing on beautifully crafted visual design for web applications."
         />
-        <meta property="og:title" content="One X Three Development Studio" />
+        <meta property="og:title" content="1X3 Development Studio" />
         <meta
           property="og:image"
           content="https://1x3.studio/static/images/banner.png"
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@imarikchakma" />
-        <meta name="twitter:title" content="One X Three Development Studio" />
+        <meta name="twitter:title" content="1X3 Development Studio" />
         <meta
           name="twitter:description"
           content="A tiny development studio focusing on beautifully crafted visual design for web applications."
