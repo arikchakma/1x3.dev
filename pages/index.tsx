@@ -3,16 +3,43 @@ import Head from 'next/head'
 
 import AvatarGenerate from '../utils/AvatarGenerate'
 
-function generateGredient(from: string, to: string): string {
-  return `relative before:absolute before:w-full before:h-full before:bg-gradient-to-r before:from-${from} before:to-${to} before:blur-lg before:-z-10`
-}
-
 const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>One X Three Development Studio</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>1X3 Development Studio</title>
+        <meta name="robots" content="follow, index" />
+        <meta
+          content="A tiny development studio focusing on beautifully crafted visual design for web applications."
+          name="description"
+        />
+        <meta name="keywords" content="1X3, OneXThree Studio, Development Studio" />
+        <meta property="og:url" content="https://1x3.studio" />
+        <link rel="canonical" href="https://1x3.studio" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Arik Chakma" />
+        <meta
+          property="og:description"
+          content="A tiny development studio focusing on beautifully crafted visual design for web applications."
+        />
+        <meta property="og:title" content="One X Three Development Studio" />
+        <meta
+          property="og:image"
+          content="https://1x3.studio/static/images/banner.png"
+        />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@imarikchakma" />
+        <meta name="twitter:title" content="One X Three Development Studio" />
+        <meta
+          name="twitter:description"
+          content="A tiny development studio focusing on beautifully crafted visual design for web applications."
+        />
+        <meta
+          name="twitter:image"
+          content="https://1x3.studio/static/images/banner.png"
+        />
       </Head>
 
       <main className="flex max-w-md flex-col gap-10">
