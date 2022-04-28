@@ -14,9 +14,9 @@ export default function Document(props: DocumentInitialProps) {
         />
         <link
           rel="preload"
-          href="/fonts/Recoleta-SemiBold.ttf"
+          href="/fonts/Recoleta-SemiBold.woff2"
           as="font"
-          type="font/ttf"
+          type="font/woff2"
           crossOrigin="anonymous"
         />
         <link
