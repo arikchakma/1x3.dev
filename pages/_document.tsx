@@ -1,5 +1,5 @@
-import { Html, Head, Main, NextScript } from 'next/document'
-import type { DocumentInitialProps } from 'next/document'
+import { Html, Head, Main, NextScript } from 'next/document';
+import type { DocumentInitialProps } from 'next/document';
 
 export default function Document(props: DocumentInitialProps) {
   return (
@@ -43,17 +43,17 @@ export default function Document(props: DocumentInitialProps) {
           color="#101010"
         />
         <link rel="shortcut icon" href="/static/favicons/favicon.ico" />
-        <meta name="msapplication-TileColor" content="#101010" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
         <meta
           name="msapplication-config"
           content="/static/favicons/browserconfig.xml"
         />
-        <meta name="theme-color" content="#101010" />
+        <meta name="theme-color" content="#ffffff" />
       </Head>
       <body className="bg-background p-24 selection:bg-white selection:text-indigo-600 sm:px-10 2sm:px-5">
         <Main />
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }

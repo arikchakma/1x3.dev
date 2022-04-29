@@ -1,8 +1,9 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import { motion } from 'framer-motion'
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import { motion } from 'framer-motion';
 
-import AvatarGenerate from '../utils/AvatarGenerate'
+import AvatarGenerate from '../utils/AvatarGenerate';
+import LogoAnimation from '../components/animation/LogoAnimation';
 
 const Home: NextPage = () => {
   return (
@@ -69,7 +70,8 @@ const Home: NextPage = () => {
                 className="group transition-all hover:text-indigo-600"
               >
                 <span className="flex items-center gap-2 text-sm font-semibold">
-                  <span className="h-3 w-3 rounded-md bg-black transition-all group-hover:bg-indigo-600" />
+                  {/* <span className="h-3 w-3 rounded-md bg-black transition-all group-hover:bg-indigo-600" /> */}
+                  <LogoAnimation className="w-3 h-3 group-hover:stroke-indigo-600 transition-all" pathClassName="group-hover:fill-indigo-600 transition-all"/>
                   Next availability: June 2022
                 </span>
               </a>
@@ -81,7 +83,11 @@ const Home: NextPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: 0.3, ease: [0.075, 0.82, 0.165, 1] }}
+            transition={{
+              duration: 0.3,
+              delay: 0.3,
+              ease: [0.075, 0.82, 0.165, 1]
+            }}
           >
             <h2 className="text-xs font-semibold text-grayText">
               Currently building
@@ -148,7 +154,11 @@ const Home: NextPage = () => {
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: 0.3 * 2, ease: [0.075, 0.82, 0.165, 1] }}
+            transition={{
+              duration: 0.3,
+              delay: 0.3 * 2,
+              ease: [0.075, 0.82, 0.165, 1]
+            }}
           >
             <a
               href="https://twitter.com/ImArikChakma"
@@ -161,9 +171,10 @@ const Home: NextPage = () => {
             </a>
           </motion.div>
         </footer>
+        <div className="masking-pattern absolute inset-0 -z-10 h-full w-full bg-[url(/static/images/patterns/grid.svg)] bg-center" />
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
