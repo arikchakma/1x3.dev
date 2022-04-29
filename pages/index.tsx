@@ -71,7 +71,10 @@ const Home: NextPage = () => {
               >
                 <span className="flex items-center gap-2 text-sm font-semibold">
                   {/* <span className="h-3 w-3 rounded-md bg-black transition-all group-hover:bg-indigo-600" /> */}
-                  <LogoAnimation className="w-3 h-3 group-hover:stroke-indigo-600 transition-all" pathClassName="group-hover:fill-indigo-600 transition-all"/>
+                  <LogoAnimation
+                    className="h-3 w-3 transition-all group-hover:stroke-indigo-600"
+                    pathClassName="group-hover:fill-indigo-600 transition-all"
+                  />
                   Next availability: June 2022
                 </span>
               </a>
@@ -140,8 +143,8 @@ const Home: NextPage = () => {
                     </span>
                     <span> </span>
                     <span className="text-grayText">
-                      — Free, "sent any amount to any account". New features
-                      will be adding every month.
+                      — Free, &quot;sent any amount to any account&quot;. New
+                      features will be adding every month.
                     </span>
                   </p>
                 </div>
@@ -166,11 +169,12 @@ const Home: NextPage = () => {
               rel="noreferrer noopener"
             >
               <button className="hover:shadow-inside rounded-md bg-black px-3 py-2 font-medium text-background transition-all duration-200 hover:bg-indigo-600 hover:drop-shadow-lg">
-                Let's talk
+                Let&apos;s talk
               </button>
             </a>
           </motion.div>
         </footer>
+
         <div className="masking-pattern absolute inset-0 -z-10 h-full w-full bg-[url(/static/images/patterns/grid.svg)] bg-center" />
       </main>
     </div>
