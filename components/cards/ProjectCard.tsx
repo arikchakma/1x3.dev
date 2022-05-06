@@ -1,3 +1,5 @@
+// import NextLink from 'next/link';
+
 import AvatarGenerate from '../../utils/AvatarGenerate';
 import ExternalIcon from '../icons/ExternalIcon';
 
@@ -5,14 +7,18 @@ export default function ProjectCard({
   name,
   description,
   url,
-  className
+  className,
+  to
 }: {
   name: string;
   description: string;
   url: string;
   className?: string;
+  to: string;
 }) {
   return (
+    // <NextLink href={to}>
+    //   <a>
     <div className="rounded-lg border border-bgDark/[0.08]">
       <div>
         <div className="flex items-center justify-between border-b bg-bgDark/[0.02] py-4 px-5">
@@ -34,5 +40,7 @@ export default function ProjectCard({
         </div>
       </div>
     </div>
+    //   </a>
+    // </NextLink>
   );
 }

@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion';
+
+import projectsData from '../data/projectsData';
 import ProjectCard from './cards/ProjectCard';
 
 export default function Projects() {
@@ -16,25 +18,27 @@ export default function Projects() {
         <h2 className="text-xs font-semibold text-grayText">
           Currently building
         </h2>
-        <ul className="divide-y divide-bgDark/[0.08]">
-          <li className="py-6">
-            <ProjectCard
-              name="Sentient"
-              description={`Decentralized, DApp, and free.`}
-              url="https://sentient.arikko.dev"
-              className="before-gradient before:from-[#06F9C4] before:to-[#C406F9]"
-            />
-          </li>
-          <li className="py-6 pb-0">
-            <ProjectCard
-              name="Sendy"
-              description={`Free, &quot;sent any amount to any account&quot;. New features will be adding every month.`}
-              url="https://sendy.arikko.dev"
-              className="before-gradient before:from-[#c806f9] before:to-[#f9c806]"
-            />
-          </li>
-        </ul>
+
+        <ProjectLayout />
       </motion.div>
     </section>
+  );
+}
+
+function ProjectLayout() {
+  return (
+    <ul className="divide-y divide-bgDark/[0.08]">
+      {projectsData.map(project => (
+        <li className="py-6 last:pb-0" key={project.name}>
+          <ProjectCard
+            name={project.name}
+            description={project.description}
+            url={project.url}
+            to={project.to}
+            className={project.className}
+          />
+        </li>
+      ))}
+    </ul>
   );
 }

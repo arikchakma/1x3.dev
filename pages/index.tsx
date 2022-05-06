@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { motion } from 'framer-motion';
 
 import Projects from '../components/Projects';
 import Header from '../components/Header';
