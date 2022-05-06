@@ -37,4 +37,8 @@
     stroke-linejoin: round;
     stroke-linecap: round;
   }
+
+  .before-gradient {
+    @apply relative before:absolute before:-z-10 before:h-full before:w-full before:bg-gradient-to-r before:blur-lg;
+  }
 }

@@ -40,15 +40,15 @@ export default function Document(props: DocumentInitialProps) {
         <link
           rel="mask-icon"
           href="/static/favicons/safari-pinned-tab.svg"
-          color="#101010"
+          color="#F7F7F7"
         />
         <link rel="shortcut icon" href="/static/favicons/favicon.ico" />
-        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileColor" content="#F7F7F7" />
         <meta
           name="msapplication-config"
           content="/static/favicons/browserconfig.xml"
         />
-        <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" content="#F7F7F7" />
       </Head>
       <body className="bg-background p-24 selection:bg-white selection:text-indigo-600 sm:px-10 2sm:px-5">
         <Main />
