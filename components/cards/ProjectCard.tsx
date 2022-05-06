@@ -13,7 +13,7 @@ export default function ProjectCard({
   className?: string;
 }) {
   return (
-    <div className="rounded border border-bgDark/[0.08]">
+    <div className="rounded-lg border border-bgDark/[0.08]">
       <div>
         <div className="flex items-center justify-between border-b bg-bgDark/[0.02] py-4 px-5">
           <div className="flex items-center gap-2">
