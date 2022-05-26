@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', ...fontFamily.sans],
         serif: ['Recoleta', ...fontFamily.serif],
+        cursive:['Shrikhand', 'cursive'],
       },
       colors: {
         bgDark: '#111111',

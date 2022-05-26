@@ -11,7 +11,7 @@ export default function Header() {
         transition={{ duration: 0.3 }}
         className="grid gap-4"
       >
-        <h1 className="font-serif text-3xl font-semibold">1X3 Dev Studio</h1>
+        <h1 className="font-cursive text-3xl font-semibold">1X3 Dev Studio</h1>
         <p className="text-sm text-grayText">
           A tiny development studio focusing on beautifully crafted visual
           design for web applications.
