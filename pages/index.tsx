@@ -20,7 +20,6 @@ const Home: NextPage = () => {
           content="1X3, OneXThree Studio, Development Studio"
         />
         <meta property="og:url" content="https://1x3.studio" />
-        <link rel="canonical" href="https://1x3.studio" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Arik Chakma" />
         <meta
