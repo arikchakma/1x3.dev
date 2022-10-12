@@ -29,7 +29,8 @@ export default function Header() {
                 className="h-3 w-3 transition-all group-hover:stroke-indigo-600"
                 pathClassName="group-hover:fill-indigo-600 transition-all"
               />
-              Next availability: June 2022
+              {/* Next availability: June 2022 */}
+              Available for new projects
             </span>
           </a>
         </div>

@@ -23,9 +23,7 @@ export default function ProjectCard({
       <div>
         <div className="flex items-center justify-between border-b bg-bgDark/[0.02] py-4 px-5">
           <div className="flex items-center gap-2">
-            <figure className={className}>
-              <AvatarGenerate name={name} className="h-6 w-6 rounded-2xl" />
-            </figure>
+            <AvatarGenerate name={name} className="h-6 w-6 rounded-2xl" />
             <span className="font-semibold">{name}</span>
           </div>
 
