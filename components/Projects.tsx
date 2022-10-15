@@ -34,8 +34,6 @@ function ProjectLayout() {
             name={project.name}
             description={project.description}
             url={project.url}
-            to={project.to}
-            className={project.className}
           />
         </li>
       ))}

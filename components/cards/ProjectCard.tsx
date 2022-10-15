@@ -8,13 +8,11 @@ export default function ProjectCard({
   description,
   url,
   className,
-  to
 }: {
   name: string;
   description: string;
   url: string;
   className?: string;
-  to: string;
 }) {
   return (
     // <NextLink href={to}>
